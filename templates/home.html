@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form action="calculator" method="post">
+
+    {% csrf_token %}
+<!--    Enter 1st no:<input type="text" name="num1"><br>-->
+<!--    <br>-->
+<!--    Enter 2nd no:<input type="text" name="num2"><br>-->
+<!--    <br>-->
+        <div class="bg">
+        <h1 style="color:cornflowerblue">🎖️Calculator🎖️</h1>
+        <input type="text" name="num" placeholder="Enter a number"><br>
+<!--    Enter a gender:<input type="text" name="num"><br>-->
+        <br>
+        <div class="btn">
+            <button class="button-30" role="button">Submit</button>
+        </div>
+        </div>
+</form>
+
+{% endblock %}

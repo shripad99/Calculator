@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <div style="width:100%" class="result">
+    <h1 style="color:cornflowerblue">RESULT</h1>
+ </div>
+    <br/>
+    <br/>
+<div class="cards">
+  <div class="card-1">
+      <h5>Total no of Digits</h5>
+      {{ result.0.0 }}
+  </div>
+  <div class="card-2">
+      <h5>Total no of Odds</h5>
+      {{ result.0.1 }}
+  </div>
+  <div class="card-3">
+      <h5>Total no of evens</h5>
+      {{ result.0.2 }}
+  </div>
+  <div class="card-4">
+      <h5>Reverse</h5>
+      {{ result.1 }}
+  </div>
+  <div class="card-5">
+      <h5>Palindrome</h5>
+      {{ result.2 }}
+  </div>
+  <div class="card-6">
+      <h5>Armstrong</h5>
+      {{ result.3 }}
+  </div>
+</div>
+{% endblock %}
